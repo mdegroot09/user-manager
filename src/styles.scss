@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-image: url('https://www.xactware.com/globalassets/us/images/property-preservation/XactPRM_after.jpg');
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 16px);
+  min-width: fit-content;
+  background-size: cover;
+  background-position: center;
+}
