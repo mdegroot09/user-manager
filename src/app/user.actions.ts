@@ -11,15 +11,13 @@ export class ActionEx implements Action {
 }
 
 export class UserAdd implements ActionEx {
-  readonly type = UserActionTypes.Add
-
-  constructor(public payload: any){
+  readonly type = UserActionTypes.Add;
+  constructor(public payload: any) {
   }
 }
 
 export class UserRemove implements ActionEx {
   readonly type = UserActionTypes.Remove;
-
-  constructor(public payload: any){
+  constructor(public payload: any) {
   }
 }

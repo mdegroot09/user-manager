@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UpdateComponent } from './update/update.component';
 import { NewComponent } from './new/new.component';
+import { UsersViewComponent } from './users-view/users-view.component';
+import { UserAddComponent } from './user-add/user-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UpdateComponent,
-    NewComponent
+    NewComponent,
+    UsersViewComponent,
+    UserAddComponent
   ],
   imports: [
     AppRoutingModule,
