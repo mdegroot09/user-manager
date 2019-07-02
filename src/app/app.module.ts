@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { UpdateComponent } from './update/update.component';
 import { NewComponent } from './new/new.component';
 import { UsersViewComponent } from './users-view/users-view.component';
+import { UsersViewUpdateComponent } from './users-view/users-view-update.component';
 import { UserAddComponent } from './user-add/user-add.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { UserAddComponent } from './user-add/user-add.component';
     UpdateComponent,
     NewComponent,
     UsersViewComponent,
+    UsersViewUpdateComponent,
     UserAddComponent
   ],
   imports: [
