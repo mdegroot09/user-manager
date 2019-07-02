@@ -6,7 +6,7 @@ import { NewComponent } from './new/new.component';
 
 const routes: Routes = [
   {path: 'new', component: NewComponent},
-  {path: 'update', component: UpdateComponent},
+  {path: 'update/:id', component: UpdateComponent},
   {path: '', component: HomeComponent}
 ];
 
