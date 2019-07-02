@@ -5,9 +5,9 @@ import { UpdateComponent } from './update/update.component';
 import { NewComponent } from './new/new.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
   {path: 'new', component: NewComponent},
-  {path: 'update', component: UpdateComponent}
+  {path: 'update', component: UpdateComponent},
+  {path: '', component: HomeComponent}
 ];
 
 @NgModule({

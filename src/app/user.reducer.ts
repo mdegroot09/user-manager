@@ -3,6 +3,7 @@ import {ActionEx, UserActionTypes} from './user.actions';
 export const initialState = [];
 
 export function UserReducer(state = initialState, action: ActionEx) {
+  console.log('action.payload:', action.payload, 'state:', state)
   switch (action.type) {
     case UserActionTypes.Add:
       return [...state, action.payload];

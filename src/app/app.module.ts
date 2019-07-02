@@ -21,8 +21,8 @@ import { UserAddComponent } from './user-add/user-add.component';
     UserAddComponent
   ],
   imports: [
-    AppRoutingModule,
     BrowserModule,
+    AppRoutingModule,
     StoreModule.forRoot({ users: UserReducer })
   ],
   providers: [],
