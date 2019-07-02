@@ -1,3 +1,5 @@
 export class User { 
-  name: String = ''; 
+  firstName: String = ''
+  lastName: String = ''
+  email: String = ''
 }

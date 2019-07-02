@@ -16,10 +16,12 @@ export class UserAddComponent {
     this.users = store.pipe(select('users')); 
   } 
   
-  AddUser(userName: string) { 
+  AddUser(firstName: string, lastName: string, email: string) { 
     event.preventDefault()
     const user = new User(); 
-    user.name = userName; 
+    user.firstName = firstName; 
+    user.lastName = lastName;
+    user.email = email;
     this.store.dispatch(new UserAdd(user)); 
   } 
 }

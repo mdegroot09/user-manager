@@ -1,5 +1,7 @@
 <h4>Add New User</h4>
-<form (submit)="AddUser(box.value)">
-  <input #box>
+<form (submit)="AddUser(firstName.value, lastName.value, email.value)">
+  <input #firstName placeholder="first name">
+  <input #lastName placeholder="last name">
+  <input #email placeholder="email">
   <button type="submit">Add</button>
 </form>
