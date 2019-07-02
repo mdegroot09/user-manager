@@ -3,7 +3,7 @@ import {ActionEx, UserActionTypes} from './user.actions';
 export const initialState = [];
 
 export function UserReducer(state = initialState, action: ActionEx) {
-  console.log('action.payload:', action.payload, 'state:', state)
+  console.log(state, action)
   switch (action.type) {
     case UserActionTypes.Add:
       return [...state, action.payload];
@@ -12,6 +12,10 @@ export function UserReducer(state = initialState, action: ActionEx) {
         ...state.slice(0, action.payload),
         ...state.slice(action.payload + 1)
       ];
+    case UserActionTypes.Update:
+      return [
+        // ...state.slice()
+      ]
     default:
       return state;
   }

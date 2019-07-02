@@ -17,7 +17,7 @@ export class UsersViewComponent {
   constructor(private store: Store<{ users: User[] }>) {
     this.users = store.pipe(select('users'));
   }
-
+  
   removeUser(userIndex) {
     this.store.dispatch(new UserRemove(userIndex));
   }

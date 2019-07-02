@@ -17,6 +17,7 @@ export class UserAddComponent {
   } 
   
   AddUser(userName: string) { 
+    event.preventDefault()
     const user = new User(); 
     user.name = userName; 
     this.store.dispatch(new UserAdd(user)); 
