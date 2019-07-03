@@ -1,6 +1,12 @@
 import {ActionEx, UserActionTypes} from './user.actions';
 
-export const initialState = [];
+export const initialState = [
+  {
+    firstName: 'User',
+    lastName: 'Manager',
+    email: 'user@manager.com'
+  }
+];
 
 export function UserReducer(state = initialState, action: ActionEx) {
   switch (action.type) {
