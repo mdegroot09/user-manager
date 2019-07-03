@@ -2,6 +2,7 @@
 <ul class="users">
   <li *ngFor="let user of users | async; let i=index">
     <span >{{i+1}}.</span> {{user.firstName}} {{user.lastName}}, email: {{user.email}}
+    <!-- <span >{{i+1}}.</span> {{user.firstName}} {{user.lastName}}, email: {{user.email}} -->
     <button (click)="redirect('/update/'+i)">Update</button>
   </li>
 </ul>
