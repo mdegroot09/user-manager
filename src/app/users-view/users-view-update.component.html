@@ -1,8 +1,10 @@
 <h3>Users</h3>
 <ul class="users">
   <li *ngFor="let user of users | async; let i=index">
-    <p style="margin-bottom: 5px;">Name: {{user.firstName}} {{user.lastName}}</p>
-    <p style="margin: 0 5px;">Email: {{user.email}}</p>
-    <button (click)="redirect('/update/'+i)">Edit</button>
+    <div class="userDisplay">
+      <p style="margin-bottom: 5px;">Name: {{user.firstName}} {{user.lastName}}</p>
+      <p style="margin: 0 5px;">Email: {{user.email}}</p>
+      <button (click)="redirect('/update/'+i)">Edit</button>
+    </div>
   </li>
 </ul>

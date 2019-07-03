@@ -11,7 +11,8 @@ body {
 }
 
 h3 {
-  margin-bottom: 0;
+  margin: 25px 0 10px 0;
+  font-weight: 700;
 }
 
 input{
@@ -23,7 +24,7 @@ input{
 }
 
 .aTag {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 button {
@@ -44,5 +45,7 @@ button:hover {
 
 p {
   font-size: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: start;
 }

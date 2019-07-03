@@ -1,7 +1,29 @@
 <h3>Users</h3>
-<ul class="users">
-  <li *ngFor="let user of users | async; let i=index">
-    <p style="margin-bottom: 5px;">Name: {{user.firstName}} {{user.lastName}}</p>
-    <p style="margin: 0 5px;">Email: {{user.email}}</p> 
-  </li>
-</ul>
+<div class="grid">
+<div class="gridRow">
+  <div class="gridTrioDiv">
+    <p class="underline">First Name</p>
+  </div>
+  <div class="gridTrioDiv">
+    <p class="underline">Last Name</p>
+  </div>
+  <div class="gridTrioDiv">
+    <p class="underline">Email</p> 
+  </div>
+</div>
+  <ul class="usersGrid">
+    <li *ngFor="let user of users | async; let i=index">
+      <div class="gridRow">
+        <div class="gridTrioDiv">
+          <p>{{user.firstName}}</p>
+        </div>
+        <div class="gridTrioDiv">
+          <p>{{user.lastName}}</p>
+        </div>
+        <div class="gridTrioDiv">
+          <p>{{user.email}}</p> 
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

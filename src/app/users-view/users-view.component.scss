@@ -1,12 +1,28 @@
-.users { 
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.gridRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.usersGrid { 
   margin: 0; 
   list-style-type: none; 
   padding: 0; 
-  width: 15em; 
+  width: 100%; 
 } 
 
-.users li { 
-  border-radius: 4px; 
-  padding: 4px; 
-  margin: 2px; 
+.gridTrioDiv {
+  width: 33%;
+  overflow: auto;
+}
+
+.underline {
+  text-decoration: underline;
 }
