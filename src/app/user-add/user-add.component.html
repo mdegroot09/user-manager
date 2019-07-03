@@ -1,3 +1,5 @@
+<app-users-view-update></app-users-view-update>
+
 <h4>Add New User</h4>
 <form (submit)="AddUser(firstName.value, lastName.value, email.value)">
   <input #firstName placeholder="first name">
@@ -5,3 +7,5 @@
   <input #email placeholder="email">
   <button type="submit">Add</button>
 </form>
+
+<a [routerLink]="'/'">Home</a>

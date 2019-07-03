@@ -6,13 +6,13 @@ import {Store} from '@ngrx/store';
 
 @Component({
   selector: 'app-update',
-  templateUrl: './update.component.html',
-  styleUrls: ['./update.component.scss']
+  templateUrl: './user-update.component.html',
+  styleUrls: ['./user-update.component.scss']
 })
 
-export class UpdateComponent {
+export class UserUpdateComponent {
 
-  users: Observable<User[]>;
+  // users: Observable<User[]>;
   userIndex
   user = {
     firstName: '',
@@ -34,7 +34,7 @@ export class UpdateComponent {
     }
   }
 
-  show = (firstName, lastName, email) => {
+  UpdateUser = (firstName, lastName, email) => {
     event.preventDefault()
     console.log(firstName, lastName, email, this.userIndex)
   }

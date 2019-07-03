@@ -6,8 +6,7 @@ import { UserReducer } from './user.reducer';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { UpdateComponent } from './update/update.component';
-import { NewComponent } from './new/new.component';
+import { UserUpdateComponent } from './user-update/user-update.component';
 import { UsersViewComponent } from './users-view/users-view.component';
 import { UsersViewUpdateComponent } from './users-view/users-view-update.component';
 import { UserAddComponent } from './user-add/user-add.component';
@@ -16,8 +15,7 @@ import { UserAddComponent } from './user-add/user-add.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    UpdateComponent,
-    NewComponent,
+    UserUpdateComponent,
     UsersViewComponent,
     UsersViewUpdateComponent,
     UserAddComponent
