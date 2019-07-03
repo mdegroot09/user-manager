@@ -23,7 +23,7 @@ export class UserRemove implements ActionEx {
   }
 }
 
-export class UpdateUser implements ActionEx {
+export class UserUpdate implements ActionEx {
   readonly type = UserActionTypes.Update;
   constructor(public payload: any){
   }
