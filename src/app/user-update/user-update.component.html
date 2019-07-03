@@ -1,10 +1,12 @@
-<a [routerLink]="'/'">Home</a>
-
-<h4>Update User</h4>
+<h3>Update User</h3>
 <form (submit)="updateUser(firstName.value, lastName.value, email.value)">
   <input #firstName placeholder="first name" value="{{user.firstName}}">
   <input #lastName placeholder="last name" value='{{user.lastName}}'>
   <input #email placeholder="email" value='{{user.email}}'>
   <button type="submit">Update</button>
 </form>
-<button (click)="removeUser(userIndex)">Delete</button>
+<button class="deleteBtn" (click)="removeUser(userIndex)">Delete</button>
+
+<div class="aTag">
+  <a [routerLink]="'/'">Home</a>
+</div>
