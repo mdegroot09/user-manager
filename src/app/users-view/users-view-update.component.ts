@@ -3,7 +3,6 @@ import {Router} from '@angular/router';
 import {User} from '../models/user';
 import {Observable} from 'rxjs';
 import {select, Store} from '@ngrx/store';
-import {UserRemove} from '../user.actions';
 
 @Component({
   selector: 'app-users-view-update',
@@ -17,10 +16,6 @@ export class UsersViewUpdateComponent {
   
   constructor(private store: Store<{ users: User[] }>, private router: Router) {
     this.users = store.pipe(select('users'));
-  }
-  
-  removeUser(userIndex) {
-    this.store.dispatch(new UserRemove(userIndex));
   }
 
   redirect(path){

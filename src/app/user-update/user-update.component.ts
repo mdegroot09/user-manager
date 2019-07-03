@@ -3,7 +3,7 @@ import {Router} from '@angular/router';
 import {User} from '../models/user';
 import {Observable} from 'rxjs';
 import {Store} from '@ngrx/store';
-import {UserUpdate} from '../user.actions'
+import {UserUpdate, UserRemove} from '../user.actions'
 
 @Component({
   selector: 'app-update',
@@ -43,7 +43,12 @@ export class UserUpdateComponent {
     user.lastName = lastName;
     user.email = email;
     this.users[this.userIndex] = user
-    console.log('this.users:', this.users)
     this.store.dispatch(new UserUpdate(this.users))
+    this.router.navigate(['/'])
+  }
+
+  removeUser(userIndex) {
+    this.store.dispatch(new UserRemove(userIndex));
+    this.router.navigate(['/'])
   }
 }
