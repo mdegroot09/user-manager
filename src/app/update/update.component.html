@@ -1,7 +1,9 @@
 <a [routerLink]="'/'">Go Home</a>
 
-<h4>User</h4>
-<ul class="users">
-  <p>{{user.firstName}} {{user.lastName}}, email: {{user.email}}</p>
-  <!-- <button (click)="redirect('/update/'+i)">Update</button> -->
-</ul>
+<h4>Update User</h4>
+<form (submit)="show(firstName.value, lastName.value, email.value)">
+  <input #firstName placeholder="first name" value="{{user.firstName}}">
+  <input #lastName placeholder="last name" value='{{user.lastName}}'>
+  <input #email placeholder="email" value='{{user.email}}'>
+  <button type="submit">Update</button>
+</form>
