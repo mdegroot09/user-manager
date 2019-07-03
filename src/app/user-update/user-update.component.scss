@@ -2,9 +2,16 @@
   background-color: rgb(218, 49, 49);
   color: white;
   display: inline-block;
-  margin-top: 10px;
+  align-self: center;
+  margin-left: 10%;
 }
 
 .deleteBtn:hover {
   border: solid .5px rgb(163, 36, 36);
+}
+
+.updateInput {
+  width: calc(100% - 15px);
+  height: 20px;
+  margin: 0;
 }

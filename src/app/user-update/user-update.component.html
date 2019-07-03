@@ -1,12 +1,36 @@
 <h3>Update User</h3>
-<form (submit)="updateUser(firstName.value, lastName.value, email.value)">
-  <input #firstName placeholder="first name" value="{{user.firstName}}">
-  <input #lastName placeholder="last name" value='{{user.lastName}}'>
-  <input #email placeholder="email" value='{{user.email}}'>
-  <button type="submit">Update</button>
-</form>
-<button class="deleteBtn" (click)="removeUser(userIndex)">Delete</button>
 
-<div class="aTag">
-  <a [routerLink]="'/'">Home</a>
+<div class="grid">
+  <div class="gridRow">
+    <div class="gridQuadDiv">
+      <p class="underline">First Name</p>
+    </div>
+    <div class="gridQuadDiv">
+      <p class="underline">Last Name</p>
+    </div>
+    <div class="gridQuadDiv">
+      <p class="underline">Email</p> 
+    </div>
+    <div class="gridQuadDiv">
+      <p class="underline">Action</p> 
+    </div>
+  </div>
+  <form (submit)="updateUser(firstName.value, lastName.value, email.value)" class="gridRow">
+    <div class="gridQuadDiv">
+      <input class="updateInput" #firstName placeholder="first name" value="{{user.firstName}}">
+    </div>
+    <div class="gridQuadDiv">
+      <input class="updateInput" #lastName placeholder="last name" value='{{user.lastName}}'>
+    </div>
+    <div class="gridQuadDiv">
+      <input class="updateInput" #email placeholder="email" value='{{user.email}}'>
+    </div>
+    <div class="gridQuadDiv">
+      <button type="submit">Update</button>
+      <button class="deleteBtn" (click)="removeUser(userIndex)">Delete</button>
+    </div>
+  </form>
+  <div class="aTag">
+    <a [routerLink]="'/'">Home</a>
+  </div>
 </div>

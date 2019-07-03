@@ -16,7 +16,6 @@ h3 {
 }
 
 input{
-  display: block;
   border-radius: 3px;
   border: 1px solid rgb(197, 197, 197);
   margin: 10px 0;
@@ -45,7 +44,47 @@ button:hover {
 
 p {
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0;
   text-align: start;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.gridRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.usersGrid { 
+  margin: 0; 
+  list-style-type: none; 
+  padding: 0; 
+  width: 100%; 
+} 
+
+.gridTrioDiv {
+  width: 33%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gridQuadDiv {
+  width: 25%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.underline {
+  text-decoration: underline;
 }

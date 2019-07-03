@@ -34,7 +34,7 @@
   justify-self: flex-end;
   height: 70%;
   width: 700px;
-  max-width: 100%;
+  max-width: calc(100% - 20px);
   overflow: auto;
   box-shadow: 2px 2px 5px rgb(47, 47, 47);
   padding: 0 20px;

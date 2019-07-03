@@ -1,15 +1,21 @@
-<h3>New user</h3>
-<form (submit)="AddUser(firstName.value, lastName.value, email.value)">
-  <div class="inputs">
-    <input #firstName placeholder="first name">
-    <input #lastName placeholder="last name">
-    <input #email placeholder="email">
-  </div>
-  <button style="margin: 5px 0;" type="submit">Add</button>
-</form>
-
 <app-users-view-update></app-users-view-update>
 
-<div class="aTag">
-  <a [routerLink]="'/'">Home</a>
+<div class="grid">
+  <form (submit)="AddUser(firstName.value, lastName.value, email.value)" class="gridRow">
+    <div class="gridQuadDiv">
+      <input class="addInput" #firstName placeholder="first name">
+    </div>
+    <div class="gridQuadDiv">
+      <input class="addInput" #lastName placeholder="last name">
+    </div>
+    <div class="gridQuadDiv">
+      <input class="addInput" #email placeholder="email">
+    </div>
+    <div class="gridQuadDiv">
+      <button type="submit">Add</button>
+    </div>
+  </form>
+  <div class="aTag">
+    <a [routerLink]="'/'">Home</a>
+  </div>
 </div>

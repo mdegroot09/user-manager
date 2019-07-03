@@ -1,16 +1,16 @@
 <h3>Users</h3>
 <div class="grid">
-<div class="gridRow">
-  <div class="gridTrioDiv">
-    <p class="underline">First Name</p>
+  <div class="gridRow">
+    <div class="gridTrioDiv">
+      <p class="underline">First Name</p>
+    </div>
+    <div class="gridTrioDiv">
+      <p class="underline">Last Name</p>
+    </div>
+    <div class="gridTrioDiv">
+      <p class="underline">Email</p> 
+    </div>
   </div>
-  <div class="gridTrioDiv">
-    <p class="underline">Last Name</p>
-  </div>
-  <div class="gridTrioDiv">
-    <p class="underline">Email</p> 
-  </div>
-</div>
   <ul class="usersGrid">
     <li *ngFor="let user of users | async; let i=index">
       <div class="gridRow">
