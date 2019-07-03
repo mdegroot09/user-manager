@@ -14,18 +14,28 @@ export class UpdateComponent {
 
   users: Observable<User[]>;
   userIndex
-  user = {}
+  user = {
+    firstName: '',
+    lastName: '',
+    email: ''
+  }
   
   constructor(private store: Store<{ users: User[] }>, private router: Router) {
-    // grab redux index of user off params -- has to be easier way
+    // grab ngrx index of user off params -- has to be easier way
     this.userIndex = +router.getCurrentNavigation().finalUrl.root.children.primary.segments[1].path
     // pull unique user directly off store -- better way?
     this.user = store.source['_value'].users[this.userIndex]
-    console.log('this.user:', this.user)
+    try{
+      // if no user is found, reroute to home
+      this.user.firstName && this.user.lastName && this.user.email
+    }
+    catch {
+      this.router.navigate(['/'])
+    }
   }
 
   show = (firstName, lastName, email) => {
     event.preventDefault()
-    console.log(firstName, lastName, email)
+    console.log(firstName, lastName, email, this.userIndex)
   }
 }

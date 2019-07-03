@@ -23,6 +23,5 @@ export class UserAddComponent {
     user.lastName = lastName;
     user.email = email;
     this.store.dispatch(new UserAdd(user)); 
-    
   } 
 }
